@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: cyan;
+    text-align: center;
+}
+
+.who {
+    border: 2px solid green;
+    background: lightgray;
+    text-align: center;
+}
+
+.who h3{
+    display: inline-block;
+    border: 1px solid;
+}
+
+.who img {
+    display: inline-block;
+    height: 120px;
+}
+
+.talk {
+    border: 2px solid purple;
+    background: grey;
+    text-align: center;
+}
+
+.what {
+    border: 2px solid blue;
+    background: lightgray;
+    text-align: center;
+}
+
+.project {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project h4 {
+    text-align: left;
+}
+
+.screenshot {
+    height: 100px;
+    float: left;
+}
+
+.logo {
+    height: 20px;
+}
+
+
+nav {
+    border: 2px solid orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
