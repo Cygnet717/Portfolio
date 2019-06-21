@@ -4,13 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kathy Bradt Portfolio</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link href="main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <header>
-            <h1>Kathy Bradt Portfolio</h1>
+            <h1>Hello</h1>
             <h4>My name is Kathy Bradt<br>(pronounced brat like bratwurst)<br>and I am a full stack web developer.</h4>
         </header>
+        <nav>
+            <button type="button" value="who" id="who">Who is Kathy?</button>
+            <button type="button" value="talk" id="talk">Talk to Kathy!</button>
+            <button type="button" value="what" id="what">What has Kathy done?!</button>
+        </nav>
         <main>
             <section class="who">
             <div class="whohead">
@@ -22,13 +28,14 @@
                 <p>When I am not coding I enjoy playing video games, board games, and card games.  I also love to cross stitch and put puzzels together because it is satasfying seeing how many little things can build up and work together to make a complete picture.  I am also a mother of 2 and a gestational surrogate.</p>
             </div>
             </section>
-            <section class="talk">
+            <section class="talk" >
                 <h3>Talk to Kathy!</h3>
                 <label>Email~~Kathybradt717@gmail.com</label><br>
-                <a href="https://www.linkedin.com/in/kathy-bradt-1b411a113/"><img src="https://i.imgur.com/GvEdIto.png" class="logo" title="source: imgur.com" /></a>
+                <a href="https://www.linkedin.com/in/kathy-bradt-1b411a113/"><img src="https://i.imgur.com/GvEdIto.png" class="logoButton" title="source: imgur.com" /></a>
             </section>
-            <section class="what">
+            <section class="what" >
                 <h3>What has Kathy done?!</h3>
+                <a href="https://github.com/Cygnet717"><img src="https://i.imgur.com/WguyDl9.png" class="logoButton" title="source: imgur.com" /></a>
                 <h4 class="projname">Quiz App</h4>
                 <div class="project">
                     <img alt="screen shot of amazing Quiz App" src="https://i.imgur.com/K6Oulig.png" class="screenshot">
@@ -54,11 +61,7 @@
                     </div>    
                 </div>
             </section>
-            <nav>
-                <button type="button" value="who" id="who">Who is Kathy?</button>
-                <button type="button" value="talk" id="talk">Talk to Kathy!</button>
-                <button type="button" value="what" id="what">What has Kathy done?!</button>
-            </nav>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

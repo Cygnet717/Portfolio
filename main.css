@@ -1,25 +1,39 @@
 * {
     box-sizing: border-box;
+    
+}
+
+html {
+    background-image: url('https://i.imgur.com/QHCScLZ.jpg');
+    height: 700px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
-    background: cyan;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
+    color: black;
+    border-left: 5px solid rgb(1, 1, 68);
+    background-color: rgba(191, 201, 209, 0.562);
 }
 
 .who {
-    background: lightgray;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 5px solid rgb(1, 1, 68);
+    background-color: rgba(191, 201, 209, 0.562);
 }
 
 .bio {
@@ -38,20 +52,24 @@ header {
 }
 
 .talk {
-    background: grey;
+    
     text-align: center;
     padding: 10px;
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 5px solid rgb(5, 5, 27);
+    background-color: rgba(191, 201, 209, 0.562);
 }
 
 .what {
-    background: lightgray;
+    
     text-align: center;
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 5px solid rgb(5, 5, 27);
+    background-color: rgba(191, 201, 209, 0.562);
 }
 
 .project {
@@ -77,9 +95,12 @@ header {
 }
 
 .logo {
-    height: 20px;
+    height: 15px;
 }
 
+.logoButton {
+    height: 30px;
+}
 
 nav {
     display: flex;
@@ -89,4 +110,5 @@ nav {
     max-width: 570px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
