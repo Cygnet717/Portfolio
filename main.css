@@ -17,23 +17,25 @@ header {
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
-    max-width: 570px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     color: black;
     border-left: 5px solid rgb(1, 1, 68);
     background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
 }
 
 .who {
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
-    max-width: 570px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     border-left: 5px solid rgb(1, 1, 68);
     background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
 }
 
 .bio {
@@ -55,21 +57,23 @@ header {
     
     text-align: center;
     padding: 10px;
-    max-width: 570px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     border-left: 5px solid rgb(5, 5, 27);
     background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
 }
 
 .what {
-    
+    padding: 10px;
     text-align: center;
-    max-width: 570px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     border-left: 5px solid rgb(5, 5, 27);
     background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
 }
 
 .project {
@@ -80,6 +84,23 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.projectbutton {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(88, 177, 212, 0.377);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*.screenshot {
+    -webkit-transition: width 2s, height 4s; 
+    transition: width 2s, height 4s;
+}
+.screenshot:hover {
+    width: 200%;
+    height: 200%;
+}   not working yet*/
 
 .description {
     width: 250px;
@@ -95,20 +116,82 @@ header {
 }
 
 .logo {
-    height: 15px;
+    height: 20px;
 }
 
 .logoButton {
     height: 30px;
+    cursor: pointer;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    height: fit-content;
+    max-width: 100%;
     margin-top: 10px;
-    max-width: 570px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgb(202, 223, 241);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+}
+
+nav button {
+    background-color:rgba(88, 177, 212, 0.377); 
+    border: none;
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 950px){
+    header {
+        background:rgba(191, 201, 209, 0.562);
+        text-align: center;
+        padding: 10px;
+        
+        border-radius: 5px;
+        transform: rotate(270deg);
+        position: absolute;
+        left: -30px;
+        top: 100px;
+        -webkit-transform-origin: 0 1;
+        -moz-transform-origin:    0 1;
+        -ms-transform-origin:     0 1;
+        -o-transform-origin:      0 1;
+    }
+    
+    .who {
+        position: relative;
+        background: rgba(191, 201, 209, 0.562);
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .talk {
+        background: rgba(191, 201, 209, 0.562);
+        text-align: center;
+        padding: 10px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+    
+    .what {
+        background: rgba(191, 201, 209, 0.562);
+        text-align: center;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
 }
