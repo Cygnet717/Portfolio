@@ -149,19 +149,19 @@ nav button {
 
 @media screen and (min-width: 950px){
     header {
-        background:rgba(191, 201, 209, 0.562);
+        float: left;
+        transform: rotate(-90deg);
+	    transform-origin: left top 10;
         text-align: center;
+        text-orientation: sideways;
         padding: 10px;
-        
+
+        /*margin-bottom: 10px;*/
+        max-width: 500px;
+        color: black;
+        border-left: 5px solid rgb(1, 1, 68);
+        background-color: rgba(191, 201, 209, 0.562);
         border-radius: 5px;
-        transform: rotate(270deg);
-        position: absolute;
-        left: -30px;
-        top: 100px;
-        -webkit-transform-origin: 0 1;
-        -moz-transform-origin:    0 1;
-        -ms-transform-origin:     0 1;
-        -o-transform-origin:      0 1;
     }
     
     .who {
@@ -170,7 +170,7 @@ nav button {
         text-align: center;
         padding: 10px;
         margin-bottom: 10px;
-        max-width: 700px;
+        max-width: 600px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
