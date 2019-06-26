@@ -94,12 +94,19 @@ h3, .projname {
     justify-content: space-evenly;
 }
 
+ul {
+   list-style: none; 
+   padding-left: 0;
+}
+
 .projectname {
     font-family: 'Lora', serif;
     border: 2px solid purple;
 }
 
 .projectbutton {
+    text-decoration: none;
+    color: black;
     cursor: pointer;
     border: none;
     background-color: rgba(88, 177, 212, 0.377);
