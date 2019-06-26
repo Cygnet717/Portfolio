@@ -1,25 +1,42 @@
 * {
     box-sizing: border-box;
+    
+}
+
+html {
+    background-image: url('https://i.imgur.com/QHCScLZ.jpg');
+    height: 700px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
-    background:grey;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Lora', serif;
+    border-left: 5px solid rgb(1, 1, 68);
+    background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
 }
 
 .who {
-    background: lightgray;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 5px solid rgb(1, 1, 68);
+    background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
 }
 
 .bio {
@@ -39,20 +56,27 @@ header {
 }
 
 .talk {
-    background: grey;
+    font-family: 'Karla', sans-serif;
     text-align: center;
     padding: 10px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 5px solid rgb(5, 5, 27);
+    background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
 }
 
 .what {
-    background: lightgray;
+    padding: 10px;
     text-align: center;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    border-left: 5px solid rgb(5, 5, 27);
+    background-color: rgba(191, 201, 209, 0.562);
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
 }
 
 .project {
@@ -62,6 +86,29 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.projectname {
+    font-family: 'Lora', serif;
+}
+
+.projectbutton {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(88, 177, 212, 0.377);
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+}
+
+.screenshot {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+    transition: width 2s, height 2s, transform 2s;
+}
+.screenshot:hover {
+    -ms-transform: scale(2,2);
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
 }
 
 .description {
@@ -81,53 +128,80 @@ header {
     height: 20px;
 }
 
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+.logoButton {
+    height: 30px;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 1000px){
+nav {
+    height: fit-content;
+    max-width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: rgb(202, 223, 241);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav button {
+    font-family: 'Lora', serif;
+    background-color:rgba(88, 177, 212, 0.377); 
+    border: none;
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 980px){
     header {
-        background:grey;
         text-align: center;
         padding: 10px;
         margin-bottom: 10px;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
+        color: black;
+        border-left: 5px solid rgb(1, 1, 68);
+        background-color: rgba(191, 201, 209, 0.562);
+        border-radius: 5px;
     }
     
     .who {
-        background: lightgray;
+        position: relative;
+        background: rgba(191, 201, 209, 0.562);
         text-align: center;
         padding: 10px;
         margin-bottom: 10px;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 5px;
     }
 
     .talk {
-        background: grey;
+        background: rgba(191, 201, 209, 0.562);
         text-align: center;
         padding: 10px;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 5px;
     }
     
     .what {
-        background: lightgray;
+        background: rgba(191, 201, 209, 0.562);
         text-align: center;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 5px;
+
     }
 }
