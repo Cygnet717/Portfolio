@@ -115,17 +115,45 @@ ul {
     font-family: 'Lora', serif;
 }
 
-.screenshot {
-    height: 100px;
+.container {
+    position: relative;
+    width: 50%;
+    max-width: fit-content;
+    height: fit-content;
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
     transition: width 2s, height 2s, transform 2s;
+  }
+
+.screenshot {
+    height: 100px; 
 }
-.screenshot:hover {
+
+.overlay {
+    position: absolute; 
+    left: 31%;
+    bottom: 35%; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: fit-content;
+    transition: 2s ease;
+    opacity:0;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.container:hover {
     -ms-transform: scale(2,2);
     -webkit-transform: scale(2,2);
     transform: scale(2,2);
     content: 'View Project';
 }
+
+.container:hover .overlay {
+    opacity: 1;
+  }
 
 .description {
     width: 250px;
