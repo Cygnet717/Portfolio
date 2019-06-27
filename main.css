@@ -124,6 +124,7 @@ ul {
     -ms-transform: scale(2,2);
     -webkit-transform: scale(2,2);
     transform: scale(2,2);
+    content: 'View Project';
 }
 
 .description {
