@@ -71,6 +71,15 @@ h3, .projname {
     border-radius: 5px;
 }
 
+.email {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
 .what {
     padding: 10px;
     text-align: center;
@@ -185,6 +194,7 @@ nav {
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 nav button {
