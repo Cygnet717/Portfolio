@@ -1,6 +1,6 @@
 $('.talk').hide();
 $('.what').hide();
-$('#who').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+$('.whoButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
 
 $(document).ready(function(){
     
@@ -19,34 +19,34 @@ $(document).ready(function(){
     });
 
 function buttonClick(){
-    $("nav #who").on('click', event =>{
+    $("nav .whoButton").on('click', event =>{
         console.log ('who clicked');
         $('.who').show();
         $('.talk').hide();
         $('.what').hide();
-        $('#who').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
-        $('#talk').css({'border':'none'});
-        $('#what').css({'border':'none'});
+        $('.whoButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+        $('.talkButton').css({'border':'none'});
+        $('.whatButton').css({'border':'none'});
     });
 
-    $("nav #talk").on('click', event =>{
+    $("nav .talkButton").on('click', event =>{
         console.log ('talk clicked');
         $('.who').hide();
         $('.talk').show();
         $('.what').hide();
-        $('#who').css({'border':'none'});
-        $('#talk').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
-        $('#what').css({'border':'none'});
+        $('.whoButton').css({'border':'none'});
+        $('.talkButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+        $('.whatButton').css({'border':'none'});
     });
 
-    $("nav #what").on('click', event =>{
+    $("nav .whatButton").on('click', event =>{
         console.log ('what clicked');
         $('.who').hide();
         $('.talk').hide();
         $('.what').show();
-        $('#who').css({'border':'none'});
-        $('#talk').css({'border':'none'});
-        $('#what').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+        $('.whoButton').css({'border':'none'});
+        $('.talkButton').css({'border':'none'});
+        $('.whatButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
     });
 }
     });
