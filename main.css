@@ -205,6 +205,10 @@ ul {
     display:none;
 }
 
+nav.burger {
+    display: none;
+}
+
 nav  {
     display: flex;
     flex-direction: column;
@@ -212,7 +216,7 @@ nav  {
     max-width: fit-content;
     margin-top: 3px;
     overflow: hidden;
-    background-color: rgb(202, 223, 241);
+    background-color: rgba(88, 177, 212, 0.61);
     padding: 5px;
     z-index: 1;
     position: absolute;
@@ -221,7 +225,7 @@ nav  {
 
 nav button {
     font-family: 'Lora', serif;
-    background-color:rgba(88, 177, 212, 0.377); 
+    background-color:rgba(88, 177, 212, 0.61); 
     border: none;
     cursor: pointer;
     text-align: center;
@@ -262,7 +266,11 @@ nav button {
         opacity: 1;
       }
 
-    nav.hidden, nav  {
+    nav.burger {
+        display: none;
+    }
+
+    nav.hidden {
         height: fit-content;
         max-width: 100%;
         margin-top: 10px;
