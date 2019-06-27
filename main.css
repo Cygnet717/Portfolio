@@ -12,6 +12,32 @@ html {
     background-size: cover;
 }
 
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1.change {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.bar2.change {opacity: 0;}
+  
+.bar3.change {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
 header {
     text-align: center;
     padding: 10px;
@@ -95,12 +121,11 @@ h3, .projname {
 
 .project {
     border-top:  1px solid black;
-    border-bottom: 2px solid black;
-    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid black;
+    padding: 10px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 ul {
@@ -125,6 +150,8 @@ ul {
 }
 
 .container {
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     width: 50%;
     max-width: fit-content;
@@ -134,7 +161,7 @@ ul {
   }
 
 .screenshot {
-    height: 100px; 
+    height: 100px;
 }
 
 .overlay {
@@ -153,20 +180,12 @@ ul {
     text-align: center;
   }
 
-.container:hover {
-    -ms-transform: scale(2,2);
-    -webkit-transform: scale(2,2);
-    transform: scale(2,2);
-    content: 'View Project';
-}
-
-.container:hover .overlay {
-    opacity: 1;
-  }
-
 .description {
-    width: 250px;
+    width: 150px;
     line-height: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projname {
@@ -182,19 +201,22 @@ ul {
     cursor: pointer;
 }
 
-nav {
+.hidden {
+    display:none;
+}
+
+nav  {
+    display: flex;
+    flex-direction: column;
     height: fit-content;
-    max-width: 100%;
-    margin-top: 10px;
+    max-width: fit-content;
+    margin-top: 3px;
     overflow: hidden;
     background-color: rgb(202, 223, 241);
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
     padding: 5px;
-    display: flex;
-    justify-content: space-evenly;
     z-index: 1;
+    position: absolute;
+    float: left;
 }
 
 nav button {
@@ -202,13 +224,72 @@ nav button {
     background-color:rgba(88, 177, 212, 0.377); 
     border: none;
     cursor: pointer;
-    display: inline;
     text-align: center;
     padding: 5px;
     text-decoration: none;
     font-size: 17px;
 }
 
+@media screen and (min-width: 505px){
+    .bar1, .bar2, .bar3 {
+        display: none;
+    }
+
+    .project {
+        border-top:  1px solid black;
+        border-bottom: 2px solid black;
+        padding: 10px 10px 10px 0;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .screenshot {
+        height: 100px;
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+        transition: width 2s, height 2s, transform 2s; 
+    }
+
+    .container:hover {
+        -ms-transform: scale(1.25,1.25);
+        -webkit-transform: scale(1.25,1.25);
+        transform: scale(1.25,1.25);
+        content: 'View Project';
+    }
+    
+    .container:hover .overlay {
+        opacity: 1;
+      }
+
+    nav.hidden, nav  {
+        height: fit-content;
+        max-width: 100%;
+        margin-top: 10px;
+        overflow: hidden;
+        background-color: rgb(202, 223, 241);
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+
+    nav button {
+        font-family: 'Lora', serif;
+        background-color:rgba(88, 177, 212, 0.377); 
+        border: none;
+        cursor: pointer;
+        display: inline;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+}
 @media screen and (min-width: 980px){
     header {
         text-align: center;
@@ -253,30 +334,8 @@ nav button {
         margin-right: auto;
         border-radius: 5px;
     }
-}
-
-@media screen and (max-width: 500px){
-    .project {
-        border-bottom: 1px solid black;
-        padding: 10px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .description {
-        width: 250px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .screenshot {
-        margin-left: auto;
-        margin-right: auto;
-        width: 269px;
-        height: 130px;
-        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
-        transition: width 2s, height 2s, transform 2s;
+        height: 200px;
     }
 }
