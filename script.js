@@ -14,39 +14,18 @@ $(document).ready(function(){
     });
 
     $('.hidden button').on('click', event=>{
-        console.log ('hidden clicked');
-        buttonClick();
+        buttonClick(event.target.value);
     });
 
-function buttonClick(){
-    $("nav .whoButton").on('click', event =>{
-        console.log ('who clicked');
-        $('.who').show();
-        $('.talk').hide();
-        $('.what').hide();
-        $('.whoButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
-        $('.talkButton').css({'border':'none'});
-        $('.whatButton').css({'border':'none'});
-    });
+function buttonClick(location){
+    const buttonOptions = ['who', 'talk', 'what']
+    let others = buttonOptions.filter(each => each !== location)
 
-    $("nav .talkButton").on('click', event =>{
-        console.log ('talk clicked');
-        $('.who').hide();
-        $('.talk').show();
-        $('.what').hide();
-        $('.whoButton').css({'border':'none'});
-        $('.talkButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
-        $('.whatButton').css({'border':'none'});
-    });
-
-    $("nav .whatButton").on('click', event =>{
-        console.log ('what clicked');
-        $('.who').hide();
-        $('.talk').hide();
-        $('.what').show();
-        $('.whoButton').css({'border':'none'});
-        $('.talkButton').css({'border':'none'});
-        $('.whatButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
-    });
-}
-    });
+    $(`.${location}`).show();
+    $(`.${location}Button`).css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+    others.map(i =>{ 
+        $(`.${i}`).hide();
+        $(`.${i}Button`).css({'border':'none'});
+        })
+    }
+});
