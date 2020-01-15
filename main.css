@@ -3,7 +3,7 @@
 }
 
 html {
-    background-image: url('https://i.imgur.com/QHCScLZ.jpg');
+    background-image: url('./Images/PortfolioBg.jpg');
     height: 700px;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -47,7 +47,7 @@ header {
     margin-right: auto;
     font-family: 'Lora', serif;
     border-left: 5px solid rgb(1, 1, 68);
-    background-color: rgba(191, 201, 209, 0.562);
+    background-color: rgba(160, 184, 204, 0.767);
     border-radius: 5px;
 }
 
@@ -63,7 +63,7 @@ h3, .projname {
     margin-left: auto;
     margin-right: auto;
     border-left: 5px solid rgb(1, 1, 68);
-    background-color: rgba(191, 201, 209, 0.562);
+    background-color: rgba(160, 184, 204, 0.767);
     border-radius: 5px;
     font-family: 'Karla', sans-serif;
 }
@@ -93,7 +93,7 @@ h3, .projname {
     margin-left: auto;
     margin-right: auto;
     border-left: 5px solid rgb(5, 5, 27);
-    background-color: rgba(191, 201, 209, 0.562);
+    background-color: rgba(160, 184, 204, 0.767);
     border-radius: 5px;
 }
 
@@ -114,7 +114,7 @@ h3, .projname {
     margin-right: auto;
     margin-bottom: 30px;
     border-left: 5px solid rgb(5, 5, 27);
-    background-color: rgba(191, 201, 209, 0.562);
+    background-color: rgba(160, 184, 204, 0.767);
     border-radius: 5px;
     font-family: 'Karla', sans-serif;
 }
@@ -133,18 +133,29 @@ ul {
    padding-left: 0;
 }
 
+.techUsed{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .projectname {
     font-family: 'Lora', serif;
     border: 2px solid purple;
+}
+
+.repoButtons{
+    display: flex;
+    flex-direction: column;
 }
 
 .projectbutton {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    border: none;
+    border: 1px solid black;
     background-color: rgba(88, 177, 212, 0.377);
     padding: 5px;
+    margin-top: 5px;
     border-radius: 10px;
     font-family: 'Lora', serif;
 }
@@ -153,8 +164,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 50%;
-    max-width: fit-content;
+    width: fit-content;
     height: fit-content;
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
     transition: width 2s, height 2s, transform 2s;
@@ -180,7 +190,12 @@ ul {
     text-align: center;
   }
 
-.description {
+.description{
+    border: 1px soild black;
+}
+
+.contents {
+    border: 1px soild red;
     width: 150px;
     line-height: 25px;
     text-align: center;
@@ -193,7 +208,7 @@ ul {
 }
 
 .logo {
-    height: 20px;
+    height: 30px;
 }
 
 .logoButton {
@@ -245,7 +260,7 @@ nav button {
         padding: 10px 10px 10px 0;
         margin-bottom: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 
@@ -310,6 +325,10 @@ nav button {
         border-left: 5px solid rgb(1, 1, 68);
         background-color: rgba(191, 201, 209, 0.562);
         border-radius: 5px;
+    }
+
+    .techUsed{
+        justify-content: space-evenly;
     }
     
     .who {
