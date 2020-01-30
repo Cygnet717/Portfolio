@@ -5,13 +5,15 @@ $('.whoButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
 $(document).ready(function(){
     
     $('.hamburger').on('click', event =>{
-        console.log ('burger clicked');
         $('.bar1').toggleClass('change');
         $('.bar2').toggleClass('change');
         $('.bar3').toggleClass('change');
         $('nav.burger').slideToggle("slow");
-        buttonClick();
     });
+
+    $('.burger').on('click', event=>{
+        buttonClick(event.target.value);
+    })
 
     $('.hidden button').on('click', event=>{
         buttonClick(event.target.value);
