@@ -21,7 +21,7 @@ html {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #AD99AA;
+    background-color: rgb(118, 133, 102);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -45,7 +45,7 @@ html {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(111, 95, 103, 0.8);
+    background: rgba(78, 52, 89, 0.9);
     border-radius: 5px;
     
     margin-bottom: 50px;
@@ -73,6 +73,7 @@ html {
 }
 
 .profphoto {
+    margin-top: 10px;
     display: inline-block;
     border: 2px solid black;
     height: 150px;
@@ -89,7 +90,6 @@ html {
     background: rgba(78, 52, 89, 0.9);
     margin-bottom: 50px;
     border-radius: 5px;
-    
 }
 
 li{
@@ -99,7 +99,7 @@ li{
     -moz-box-shadow:    3px 3px 5px 6px rgb(58, 39, 66);
     -webkit-box-shadow: 3px 3px 5px 6px rgb(58, 39, 66);
     box-shadow:         3px 3px 5px 6px rgb(58, 39, 66);
-    margin: 25px;
+    margin-bottom: 20px;
 }
 
 .project {
@@ -134,9 +134,9 @@ ul {
 
 .repoButtons{
     display: flex;
+    flex-direction: column;
     font-family: 'Yeon Sung';
     justify-content: space-evenly;
-  
     font-size: 20px;
 }
 
@@ -150,7 +150,6 @@ ul {
     margin-top: 5px;
     border-radius: 10px;
     padding: 15px;
-    
 }
 
 .container {
@@ -188,7 +187,7 @@ ul {
   }
 
 .description{
-    font-size: 20px;
+    font-size: 16px;
     color: #AD99AA;
     padding: 20px;
     font-family: 'Nanum Gothic';
@@ -259,6 +258,7 @@ button:focus{
 }
 
 .footer{
+    border-top: 2px solid black;
     background-color:#4E3459;
     display: flex;
     justify-content: space-evenly;
@@ -339,6 +339,10 @@ button:focus{
         border-radius: 5px;
     }
 
+    li{
+        margin: 25px;
+    }
+
     .bio{
         display: flex;
         flex-direction: row-reverse;
@@ -347,6 +351,10 @@ button:focus{
 
     .profphoto{
         height: 250px;
+    }
+    
+    .description{
+        font-size: 20px;
     }
 
     .what {
@@ -359,5 +367,25 @@ button:focus{
         margin-right: auto;
         border-radius: 5px;
         margin-bottom: 70px;
+    }
+
+    .repoButtons{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Yeon Sung';
+        justify-content: space-evenly;
+        font-size: 20px;
+    }
+    
+    .projectbutton {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        border: 1px solid black;
+        background-color: rgba(88, 177, 212, 0.377);
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        padding: 15px;
     }
 }
