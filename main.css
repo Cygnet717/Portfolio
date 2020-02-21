@@ -3,8 +3,9 @@
 }
 
 html {
-    background-image: url('./Images/PortfolioBg.jpg');
-    height: 700px;
+    background-image: url('./Images/keyboardbackground.jpg');
+    
+    background-position: center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,7 +21,7 @@ html {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #AD99AA;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -37,24 +38,6 @@ html {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
-header {
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Lora', serif;
-    border-left: 5px solid rgb(1, 1, 68);
-    background-color: rgba(160, 184, 204, 0.767);
-    border-radius: 5px;
-}
-
-h3, .projname {
-    font-family: 'Lora', serif;
-}
-
 .who {
     text-align: center;
     padding: 10px;
@@ -62,10 +45,10 @@ h3, .projname {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    border-left: 5px solid rgb(1, 1, 68);
-    background-color: rgba(160, 184, 204, 0.767);
+    background-color: rgba(111, 95, 103, 0.8);
     border-radius: 5px;
-    font-family: 'Karla', sans-serif;
+    
+    margin-bottom: 50px;
 }
 
 .bio {
@@ -73,43 +56,27 @@ h3, .projname {
     line-height: 25px;
 }
 
-.whohead{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.who img {
-    border: 2px solid black;
-    height: 120px;
-}
-
-.talk {
-    font-family: 'Karla', sans-serif;
-    text-align: center;
+.pagetitle{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    border-radius: 5px;
     padding: 10px;
-    max-width: 500px;
+    font-family: 'Yeon Sung';
+    font-size: 45px;
+   
+}
+
+.photobox{
     margin-left: auto;
     margin-right: auto;
-    border-left: 5px solid rgb(5, 5, 27);
-    background-color: rgba(160, 184, 204, 0.767);
-    border-radius: 5px;
+    width: fit-content;
 }
 
-.link {
-    color: inherit;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-}
-
-.resumelink{
-    border: 1px solid black;
-    padding: 3px;
-    background-color: rgba(88, 177, 212, 0.377);
+.profphoto {
+    display: inline-block;
+    border: 2px solid black;
+    height: 150px;
+    border-radius: 2px;
 }
 
 .what {
@@ -119,16 +86,24 @@ h3, .projname {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    border-left: 5px solid rgb(5, 5, 27);
-    background-color: rgba(160, 184, 204, 0.767);
+    background: rgba(78, 52, 89, 0.9);
+    margin-bottom: 50px;
     border-radius: 5px;
-    font-family: 'Karla', sans-serif;
+    
+}
+
+li{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(77, 45, 90);
+    -moz-box-shadow:    3px 3px 5px 6px rgb(58, 39, 66);
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(58, 39, 66);
+    box-shadow:         3px 3px 5px 6px rgb(58, 39, 66);
+    margin: 25px;
 }
 
 .project {
-    border-top:  1px solid black;
-    border-bottom: 1px solid black;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -136,22 +111,33 @@ h3, .projname {
 
 ul {
    list-style: none; 
-   padding-left: 0;
+   padding-left: 10px;
 }
 
 .techUsed{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.projectname {
-    font-family: 'Lora', serif;
-    border: 2px solid purple;
+.projname {
+    font-family: 'Yeon Sung';
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    
 }
 
 .repoButtons{
     display: flex;
-    flex-direction: column;
+    font-family: 'Yeon Sung';
+    justify-content: space-evenly;
+  
+    font-size: 20px;
 }
 
 .projectbutton {
@@ -163,7 +149,8 @@ ul {
     padding: 5px;
     margin-top: 5px;
     border-radius: 10px;
-    font-family: 'Lora', serif;
+    padding: 15px;
+    
 }
 
 .container {
@@ -172,8 +159,8 @@ ul {
     position: relative;
     width: fit-content;
     height: fit-content;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
-    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s; 
+    transition: width 1s, height 1s, transform 1s;
   }
 
 .screenshot {
@@ -181,36 +168,31 @@ ul {
 }
 
 .overlay {
-    position: absolute; 
-    left: 31%;
-    bottom: 35%; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: fit-content;
+    background: rgba(0, 0, 0, 0.8);
+    color: #f1f1f1;
+    /* width: 100%; */
     transition: 2s ease;
-    opacity:0;
+    opacity: 0;
+  
     color: white;
-    font-size: 10px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 23% 0 0 0;
     text-align: center;
+    z-index: 100;
   }
 
 .description{
-    border: 1px soild black;
-}
+    font-size: 20px;
+    color: #AD99AA;
+    padding: 20px;
+    font-family: 'Nanum Gothic';
 
-.contents {
-    border: 1px soild red;
-    width: 150px;
-    line-height: 25px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.projname {
-    text-align: left; 
 }
 
 .logo {
@@ -222,7 +204,7 @@ ul {
     cursor: pointer;
 }
 
-.hidden {
+.navbar {
     display:none;
 }
 
@@ -230,23 +212,27 @@ nav.burger {
     display: none;
 }
 
-nav  {
+.burger  {
     display: flex;
     flex-direction: column;
     height: fit-content;
     max-width: fit-content;
     margin-top: 3px;
     overflow: hidden;
-    background-color: rgba(88, 177, 212, 0.61);
+    background-color: #4E3459;
     padding: 5px;
     z-index: 1;
     position: absolute;
     float: left;
 }
 
-nav button {
-    font-family: 'Lora', serif;
-    background-color:rgba(88, 177, 212, 0.61); 
+button:focus{
+    outline: none;
+}
+
+.burgerbutton {
+    font-family: 'Yeon Sung';
+    background-color:#4E3459; 
     border: none;
     cursor: pointer;
     text-align: center;
@@ -255,14 +241,46 @@ nav button {
     font-size: 17px;
 }
 
+.barbutton{
+    font-family: 'Yeon Sung';
+    font-size: 25px;
+    background-color:#4E3459; 
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    
+}
+
+.footerspan{
+    font-family: 'Nanum Gothic';
+}
+
+.footer{
+    background-color:#4E3459;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    padding: 10px;
+}
+
+
 @media screen and (min-width: 505px){
     .bar1, .bar2, .bar3 {
         display: none;
     }
+    .hamburger{
+        display: none;
+    }
 
     .project {
-        border-top:  1px solid black;
-        border-bottom: 2px solid black;
         padding: 10px 10px 10px 0;
         margin-bottom: 10px;
         display: flex;
@@ -271,9 +289,9 @@ nav button {
     }
 
     .screenshot {
-        height: 100px;
-        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
-        transition: width 2s, height 2s, transform 2s; 
+        height: 200px;
+        -webkit-transition: width 1s, height 1s, -webkit-transform 1s; 
+        transition: width 1s, height 1s, transform 1s; 
     }
 
     .container:hover {
@@ -291,84 +309,55 @@ nav button {
         display: none;
     }
 
-    nav.hidden {
+    .navbar {
         height: fit-content;
         max-width: 100%;
-        margin-top: 10px;
         overflow: hidden;
-        background-color: rgb(202, 223, 241);
         position: fixed;
-        bottom: 0px;
+        top: 0px;
+        left: 0;
+        right: 0;
         width: 100%;
-        padding: 5px;
+        padding: 15px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         z-index: 1;
-    }
-
-    nav button {
-        font-family: 'Lora', serif;
-        background-color:rgba(88, 177, 212, 0.377); 
-        border: none;
-        cursor: pointer;
-        display: inline;
-        text-align: center;
-        padding: 5px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-}
-@media screen and (min-width: 980px){
-    header {
-        text-align: center;
-        padding: 10px;
-        margin-bottom: 10px;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        color: black;
-        border-left: 5px solid rgb(1, 1, 68);
-        background-color: rgba(191, 201, 209, 0.562);
-        border-radius: 5px;
-    }
-
-    .techUsed{
-        justify-content: space-evenly;
+        background-image: linear-gradient(to bottom right, rgb(66, 58, 65), #262626);
     }
     
     .who {
         position: relative;
-        background: rgba(191, 201, 209, 0.562);
-        text-align: center;
+        background: rgba(78, 52, 89, 0.9);
+        top: 80px;
         padding: 10px;
-        margin-bottom: 10px;
-        max-width: 700px;
+        padding-bottom: 5px;
+        margin-bottom:80px;
+        max-width: 750px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
     }
 
-    .talk {
-        background: rgba(191, 201, 209, 0.562);
-        text-align: center;
-        padding: 10px;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5px;
+    .bio{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
-    
+
+    .profphoto{
+        height: 250px;
+    }
+
     .what {
-        background: rgba(191, 201, 209, 0.562);
+        top: 80px;
+        position: relative;
+        background: rgba(78, 52, 89, 0.9);
         text-align: center;
-        max-width: 700px;
+        max-width: 750px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
-    }
-
-    .screenshot {
-        height: 200px;
+        margin-bottom: 70px;
     }
 }

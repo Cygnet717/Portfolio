@@ -6,7 +6,7 @@
         <title>Kathy Bradt Portfolio</title>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link href="main.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Karla|Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Yeon+Sung&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="hamburger">
@@ -14,54 +14,38 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <nav class='burger'>
-                <button type="button" value="who" class="whoButton">Who is Kathy?</button>
-                <button type="button" value="talk" class="talkButton">Talk to Kathy!</button>
-                <button type="button" value="what" class="whatButton">What has Kathy done?!</button>
+                <button type="button" value="who" class="whoButton burgerbutton">About</button>
+                <button type="button" value="what" class="whatButton burgerbutton">Projects</button>
             </nav>
         </div>
-        <nav class='hidden'>
-            <button type="button" value="who" class="whoButton">Who is Kathy?</button>
-            <button type="button" value="talk" class="talkButton">Talk to Kathy!</button>
-            <button type="button" value="what" class="whatButton">What has Kathy done?!</button>
+        <nav class='navbar'>
+            <button type="button" value="who" class="whoButton barbutton">About</button>
+            <button type="button" value="what" class="whatButton barbutton">Projects</button>
         </nav>
-        <header>
-            <h1>Hello!</h1>
-            <h4>My name is Kathy Bradt and I am a full stack web developer.</h4>
-        </header>
         <main>
             <section class="who">
-                <div class="whohead">
-                    <h3>Who is Kathy?</h3>
-                    <img alt="Kathy's Professional Photo" src="./Images/Selfie.jpg" class="profphoto">
+                <div class='pagetitle'>
+                    About
                 </div>
                 <div class="bio">
-                    <p>I am a graduate of the Thinkful Web Developer Career Path. I love solving problems, and I am a detail oriented, self starter.  
-                        I love working with code and I wish I had found this path a decade ago, but here I am jumping in feet first ready to work hard and learn anything and everything.  
-                        I can't wait to be a part of a creative and collaborative team building, testing, and modifying products.</p>
-                    <p>My main areas of experience are with JavaScript, React, Express, PostgreSQL Node.js, python, HTML, and CSS. </p>
-                    <p>When I am not coding I enjoy playing video games, board games, and card games.  
-                        I also love to cross stitch and put puzzles together because it is satisfying seeing how many little things can build up and work together to make a complete picture.</p>
+                    <div class='photobox'>
+                        <img alt="Kathy's Professional Photo" src="./Images/Selfie1.jpg" class="profphoto">
+                    </div>
+                    <div>
+                        <p class='description'>I am Kathy Bradt a graduate of the Thinkful Web Developer Career Path. I enjoy solving problems, and I am a detail oriented, self starter.  
+                            I love working with code and I wish I had found this path a decade ago, but here I am jumping in feet first ready to work hard and learn anything and everything.  
+                            I can't wait to be a part of a creative and collaborative team building, testing, and modifying products.</p>
+                        <p class='description'>My main areas of experience are with JavaScript, React, Express, PostgreSQL Node.js, python, HTML, and CSS. </p>
+                        <p class='description'>When I am not coding I enjoy playing video games, board games, and card games.  
+                            I also love to cross stitch and put puzzles together because it is satisfying seeing how many little things can build up and work together to make a complete picture.</p>
+                    </div>
                 </div>
             </section>
-            <section class="talk" >
-                <h3>Talk to Kathy!</h3>
-                <p>
-                    Email |<a class='link' href="mailto:Kathybradt717@gmail.com"> Kathybradt717@gmail.com</a>
-                <br><br>
-                    <a href="./Images/KathyBradtResume.pdf" target="_blank" class='link resumelink'>Resume</a>
-                </p>
-                <a href="https://www.linkedin.com/in/kathy-bradt-1796a9191/" target="_blank">
-                    <img src="./Images/LinkedinLogo.png" class="logoButton" alt="Linkedin Logo" />
-                </a>
-                <a href="https://github.com/Cygnet717" target="_blank">
-                    <img src="./Images/GitHubLogo.png" class="logoButton" alt="GitHub Logo" />
-                </a>
-            </section>
             <section class="what" >
-                <h3>What has Kathy done?!</h3>
+                <div class='pagetitle'>Projects</div>
                 <ul>
                     <li>
-                        <h4 class="projname">YearPrism</h4>
+                        <div class="projname">YearPrism</div>
                         <div class="project">
                             <div class="container">
                                 <a target="_blank"  href="http://yearprism.herokuapp.com/">
@@ -69,7 +53,7 @@
                                     <div class="overlay">View Project</div>
                                 </a>
                             </div>
-                                <p class="description">If you ever wonder what year or month you got your pet, bought a house or went on that
+                                <p class='description'>If you ever wonder what year or month you got your pet, bought a house or went on that
                                      wonderful vacation then YearPrism is for you!  Store all your major life events in this easy to use app.
                                        Sort your events to see all the jobs you have had over the years or all of the work you have done on your house.
                                       Make notes about each event to remember valuable information you might forget about 10 years from now.
@@ -77,18 +61,17 @@
                             <div class="techUsed">
                                 <img alt="React logo" src="./Images/react.png" class="logo">
                                 <img alt="Node.js logo" src="./Images/NodeJs.png" class="logo">
-                                <img alt="Express logo" src="./Images/ExpressJS.png" class="logo">
                                 <img alt="PostgreSQL logo" src="./Images/postgresql.png" class="logo">
                                 <img alt="Css3 logo" src="./Images/CSSLogo.png" class="logo">
                             </div>
                             <div class="repoButtons">
-                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/YearPrism">View App Repo</a>
-                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/yearprism-api">View API Repo</a>
+                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/YearPrism">Front-end Code</a>
+                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/yearprism-api">Back-end Code</a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <h4 class="projname">Ultimate Tutor</h4>
+                        <div class="projname">Ultimate Tutor</div>
                         <div class="project">
                             <div class="container">
                                 <a target="_blank"  href="http://ultimatetutor.herokuapp.com/">
@@ -102,18 +85,17 @@
                             <div class="techUsed">
                                 <img alt="React logo" src="./Images/react.png" class="logo">
                                 <img alt="Node.js logo" src="./Images/NodeJs.png" class="logo">
-                                <img alt="Express logo" src="./Images/ExpressJS.png" class="logo">
                                 <img alt="PostgreSQL logo" src="./Images/postgresql.png" class="logo">
                                 <img alt="Css3 logo" src="./Images/CSSLogo.png" class="logo">
                             </div>
                             <div class="repoButtons">
-                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/Ultimate-tutor-app">View App Repo</a>
-                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/ultimate-tutor-api">View API Repo</a>
+                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/Ultimate-tutor-app">Front-end Code</a>
+                                <a target="_blank"  class="projectbutton" href="https://github.com/Cygnet717/ultimate-tutor-api">Back-end Code</a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <h4 class="projname">Celebrity Cocktail Party</h4>
+                        <div class="projname">Celebrity Cocktail Party</div>
                         <div class="project">
                             <div class="container">
                                 <a target="_blank"  href="https://cygnet717.github.io/Celebrity-Cocktail-Party/">
@@ -136,7 +118,7 @@
                         </div>
                     </li>
                     <li>  
-                        <h4 class="projname">Quiz App</h4>
+                        <div class="projname">Quiz App</div>
                         <div class="project">
                             <div class="container">
                                 <a target="_blank"  href="https://cygnet717.github.io/Quiz-App/">
@@ -160,7 +142,20 @@
                 </ul>
             </section>
         </main>
-        
+        <footer class='footer'>
+            <span class='footerspan'><img src='./Images/icon/001-email.png' alt='email'></span>
+            <span class='footerspan'><a href='./Images/KathyBradtResume.pdf'><img src='./Images/icon/002-resume.png' alt='resume'></a>Resume</span>
+            <span class='footerspan'> 
+                <a href="https://www.linkedin.com/in/kathy-bradt-1796a9191/" target="_blank">
+                    <img src="./Images/LinkedinLogo.png" class="logoButton" alt="Linkedin Logo" />
+                </a>
+            </span>
+            <span class='footerspan'>
+                <a href="https://github.com/Cygnet717" target="_blank">
+                    <img src="./Images/GitHubLogo.png" class="logoButton" alt="GitHub Logo" />
+                </a>
+            </span>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>

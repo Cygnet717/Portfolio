@@ -1,6 +1,6 @@
-$('.talk').hide();
 $('.what').hide();
-$('.whoButton').css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+$('.whatButton').css({"border": "2px solid #262626"})
+$('.whoButton').css({"border": "2px solid #4F5945"});
 
 $(document).ready(function(){
     
@@ -15,19 +15,19 @@ $(document).ready(function(){
         buttonClick(event.target.value);
     })
 
-    $('.hidden button').on('click', event=>{
+    $('.navbar button').on('click', event=>{
         buttonClick(event.target.value);
     });
 
 function buttonClick(location){
-    const buttonOptions = ['who', 'talk', 'what']
+    const buttonOptions = ['who', 'what']
     let others = buttonOptions.filter(each => each !== location)
 
     $(`.${location}`).show();
-    $(`.${location}Button`).css({"border": "2px solid rgba(201, 105, 201, 0.623)"});
+    $(`.${location}Button`).css({"border": "2px solid #4F5945"});
     others.map(i =>{ 
         $(`.${i}`).hide();
-        $(`.${i}Button`).css({'border':'none'});
+        $(`.${i}Button`).css({'border':'2px solid #262626'});
         })
     }
 });
