@@ -22,6 +22,7 @@ html {
     display: inline-block;
     cursor: pointer;
     width: 100%;
+    z-index: 99;
 }
   
 .bar1, .bar2, .bar3 {
@@ -179,18 +180,24 @@ ul {
 
 .screenshot {
     height: 100px;
+
 }
 
 .overlay {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -20px;
+    left: 50%;
+    top: 50%;
+    margin-left: -65px;
+    margin-top: -17px;
     color: #f1f1f1;
     font-size: 20px;
-    padding: 23% 0 0 0;
+    padding: 5px;
+    width: 130px;
+    height: 34px;
     text-align: center;
-    z-index: 100;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
   }
 
 .description{
@@ -309,14 +316,20 @@ button:focus{
     }
 
     .overlay{
-        transition: 2s ease;
-        opacity: 0;
         position: absolute;
         left: 0;
         bottom: 0;
         top: 0;
         right: 0;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 23% 0 0 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 2s ease;
         background: rgba(0, 0, 0, 0.8);
+        border-radius: 0;
     }
 
     .screenshot {
