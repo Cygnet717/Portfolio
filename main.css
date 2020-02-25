@@ -63,8 +63,25 @@ html {
     margin-right: auto;
     background: rgba(78, 52, 89, 0.9);
     border-radius: 5px;
-    
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.footcredits{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    border-top: 1px solid black;
+}
+
+.smallfooterlink{
+    color: #AD99AA;
+    text-decoration: none;
+}
+
+.smallfooter{
+    margin: 5px;
+    color: #AD99AA;
+    font-size: small;
 }
 
 .bio {
@@ -282,6 +299,7 @@ button:focus{
 
 .resume{
     text-decoration: none;
+    color: black;
 }
 
 .footer{
@@ -304,6 +322,12 @@ button:focus{
     }
     .hamburger{
         display: none;
+    }
+
+    .smallfooter{
+        margin: 5px;
+        color: #AD99AA;
+        font-size: medium;
     }
 
     .project {
