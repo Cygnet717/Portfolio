@@ -64,6 +64,7 @@ html {
     background: rgba(78, 52, 89, 0.9);
     border-radius: 5px;
     margin-bottom: 80px;
+    animation: fadeIn 1s;
 }
 
 .footcredits{
@@ -123,6 +124,7 @@ html {
     background: rgba(78, 52, 89, 0.9);
     margin-bottom: 50px;
     border-radius: 5px;
+    animation: fadeIn 0.5s;
 }
 
 li{
@@ -284,7 +286,13 @@ button:focus{
     text-align: center;
     text-decoration: none;
     border-radius: 3px;
-    
+    animation: fadeIn 2s;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .footerspan{
@@ -315,6 +323,7 @@ button:focus{
     width:100%;
     padding: 10px;
     z-index: 99;
+    animation: fadeIn 1s;
 }
 
 @media screen and (min-width: 505px){
